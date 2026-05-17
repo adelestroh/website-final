@@ -1,9 +1,19 @@
 <script lang="ts">
 	import Cloudy from '$lib/assets/ui-elements/cloudy_icon.svg';
+	import CloudySunny from '$lib/assets/ui-elements/Icon_cloudysun.png';
+	import Rainy from '$lib/assets/ui-elements/Icon_Rain.png';
+	import Sunny from '$lib/assets/ui-elements/Icon_sunny.png';
 
 	let isOpen = $state(false);
 	let container: HTMLElement | undefined = $state();
-	let { time, src, children }: { time: string; src: string; children: any } = $props();
+	let {
+		time,
+		temperature,
+		weatherID,
+		src,
+		children
+	}: { time: string; temperature: number; weatherID: number; src: string; children: any } =
+		$props();
 
 	const anchor = `--a-${crypto.randomUUID()}`;
 
@@ -12,32 +22,33 @@
 			isOpen = false;
 		}
 	}
+
+	const icons = [Cloudy, CloudySunny, Rainy, Sunny];
 </script>
 
 <svelte:window onclick={handleGlobalClick} />
 
-<div class="stacking-context-parent" bind:this={container}>
-	<button
-		class="index-item {isOpen ? 'isOpen' : ''}"
-		style:anchor-name={anchor}
-		onclick={() => {
-			isOpen = !isOpen;
-			console.log('test');
-		}}
-	>
-		<p class="date">{time}</p>
-	</button>
+<button
+	class="index-item {isOpen ? 'isOpen' : ''}"
+	style:anchor-name={anchor}
+	onclick={() => {
+		isOpen = !isOpen;
+		console.log('test');
+	}}
+	bind:this={container}
+>
+	<p class="date">{time}</p>
 	{#if isOpen}
 		<div class="index-content" style:position-anchor={anchor}>
 			<div class="top-bar">
-				<p>12°C</p>
-				<img src={Cloudy} class="temp-icon" />
+				<p>{temperature}°C</p>
+				<img src={icons[weatherID]} class="temp-icon" />
 			</div>
 			<div class="content"><img {src} alt="" /></div>
 			<div class="content">{@render children()}</div>
 		</div>
 	{/if}
-</div>
+</button>
 
 <style>
 	.index-item {
@@ -81,6 +92,7 @@
 		border: unset;
 		position-visibility: always;
 		position-try-fallbacks: --above-right;
+		z-index: 1;
 
 		width: calc(anchor-size(width) * 0.7);
 
@@ -133,6 +145,17 @@
 		.index-content {
 			width: calc(anchor-size(width));
 			grid-template-columns: 30vw 1fr;
+			inset: unset;
+			bottom: calc(anchor(top) + 10px);
+			right: anchor(right);
+			position-try-fallbacks: unset;
+			position-try-fallbacks: --below-right;
+		}
+
+		@position-try --below-right {
+			inset: unset;
+			top: calc(anchor(bottom) + 10px);
+			right: anchor(right);
 		}
 	}
 </style>

@@ -27,10 +27,11 @@
 <style>
 	:global(body) {
 		width: 100vw;
-		height: 100vh;
+		height: 100dvh;
 		margin: unset;
 		display: flex;
 		flex-direction: column;
+		overflow: hidden;
 	}
 
 	#main-content {

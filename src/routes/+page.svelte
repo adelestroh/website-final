@@ -4,16 +4,20 @@
 </script>
 
 <div id="indexes">
-	<Index time="20.03.26 // 09:55" src={Image}>
+	<Index time="20.03.26 // 09:55" temperature={20} weatherID={3} src={Image}>
 		<p>
 			Dragged, dredged, layered - these episodes trace the shifting material reality of the
 			shoreline at Strandeiland, an artificial island located in IJBurg. Listening to the material
 			reality of sand and its surrounding, I follow
 		</p>
 	</Index>
-	{#each { length: 28 }}
-		<Index time="17.05.26 // 13:45" src={Image}>
-			<p>Dragged, dredged, layered</p>
+	{#each { length: 20 }}
+		<Index time="20.03.26 // 09:55" temperature={20} weatherID={3} src={Image}>
+			<p>
+				Dragged, dredged, layered - these episodes trace the shifting material reality of the
+				shoreline at Strandeiland, an artificial island located in IJBurg. Listening to the material
+				reality of sand and its surrounding, I follow
+			</p>
 		</Index>
 	{/each}
 </div>
