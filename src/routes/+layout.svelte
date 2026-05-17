@@ -29,16 +29,24 @@
 		width: 100vw;
 		height: 100vh;
 		margin: unset;
-		/* overflow: hidden; */
 		display: flex;
 		flex-direction: column;
 	}
 
 	#main-content {
 		width: 100%;
+		min-height: 0;
+		overflow: hidden;
 		height: calc(100vh - 50px);
 		display: grid;
 		grid-template-columns: auto 300px;
+	}
+
+	@media (max-width: 750px) {
+		#main-content {
+			grid-template-columns: unset;
+			grid-template-rows: minmax(0, 1fr) 200px;
+		}
 	}
 
 	.bg-image,
@@ -55,7 +63,6 @@
 		transform: scale(1.1);
 		z-index: -5;
 	}
-
 
 	/* splitters MUST NOT disappear */
 	.bg-splitter-1 {

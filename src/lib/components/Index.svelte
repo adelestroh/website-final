@@ -1,21 +1,43 @@
 <script lang="ts">
-	const anchor = `--a-${crypto.randomUUID()}`;
 	import Cloudy from '$lib/assets/ui-elements/cloudy_icon.svg';
 
+	let isOpen = $state(false);
+	let container: HTMLElement | undefined = $state();
 	let { time, src, children }: { time: string; src: string; children: any } = $props();
+
+	const anchor = `--a-${crypto.randomUUID()}`;
+
+	function handleGlobalClick(e: MouseEvent) {
+		if (container && !container.contains(e.target as Node)) {
+			isOpen = false;
+		}
+	}
 </script>
 
-<button popovertarget={anchor} class="index-item" style:anchor-name={anchor}>
-	<p class="date">{time}</p>
-	<div class="index-content" id={anchor} style:position-anchor={anchor} popover>
-		<div class="top-bar">
-			<p>12°C</p>
-			<img src={Cloudy} class="temp-icon" />
+<svelte:window onclick={handleGlobalClick} />
+
+<div class="stacking-context-parent" bind:this={container}>
+	<button
+		class="index-item {isOpen ? 'isOpen' : ''}"
+		style:anchor-name={anchor}
+		onclick={() => {
+			isOpen = !isOpen;
+			console.log('test');
+		}}
+	>
+		<p class="date">{time}</p>
+	</button>
+	{#if isOpen}
+		<div class="index-content" style:position-anchor={anchor}>
+			<div class="top-bar">
+				<p>12°C</p>
+				<img src={Cloudy} class="temp-icon" />
+			</div>
+			<div class="content"><img {src} alt="" /></div>
+			<div class="content">{@render children()}</div>
 		</div>
-		<div class="content"><img {src} alt="" /></div>
-		<div class="content">{@render children()}</div>
-	</div>
-</button>
+	{/if}
+</div>
 
 <style>
 	.index-item {
@@ -31,7 +53,6 @@
 		text-align: unset;
 
 		cursor: pointer;
-		z-index: 2;
 
 		text-shadow:
 			0 0 10px rgba(155, 154, 154, 1),
@@ -44,13 +65,12 @@
 		box-shadow:
 			0 0 10px rgba(235, 235, 235, 0.5),
 			0 0 20px rgba(198, 198, 198, 0.25);
-
-		&:has(> .index-content:popover-open) {
-			background: rgba(171, 165, 153, 0.249);
-		}
 	}
 
 	.index-content {
+		display: grid;
+		grid-template-columns: 300px 1fr;
+		grid-template-rows: 50px minmax(0, 1fr);
 		box-sizing: border-box;
 		margin: 0;
 		padding: unset;
@@ -74,12 +94,10 @@
 		color: white;
 
 		text-shadow: 0 0 10px rgba(155, 154, 154, 1);
+	}
 
-		&:popover-open {
-			display: grid;
-			grid-template-columns: 300px 1fr;
-			grid-template-rows: 50px minmax(0, 1fr);
-		}
+	.isOpen {
+		background: rgba(143, 137, 130, 0.2);
 	}
 
 	.content {
@@ -89,12 +107,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-
-		& > img {
-			max-width: 100%;
-			object-fit: contain;
-			width: auto;
-		}
 	}
 
 	.top-bar {
@@ -113,7 +125,14 @@
 
 	@position-try --above-right {
 		inset: unset;
-		bottom: anchor(bottom);
+		bottom: calc(anchor(top) + 10px);
 		right: anchor(right);
+	}
+
+	@media (max-width: 1000px) {
+		.index-content {
+			width: calc(anchor-size(width));
+			grid-template-columns: 30vw 1fr;
+		}
 	}
 </style>

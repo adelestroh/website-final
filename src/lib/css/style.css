@@ -1,6 +1,10 @@
+html {
+	font-size: 16px;
+}
+
 body {
 	color: white;
-	font-family: 'Arial Narrow'
+	font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 p {
@@ -9,4 +13,9 @@ p {
 		0 0 10px rgba(155, 154, 154, 1),
 		0 0 10px rgba(155, 154, 154, 1),
 		0 0 10px rgba(155, 154, 154, 1);
+}
+
+svg {
+	color: white;
+	filter: drop-shadow(0 0 6px rgb(71, 71, 71));
 }

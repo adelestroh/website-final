@@ -28,17 +28,20 @@
 
 <style>
 	#map-column {
-		width: auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		padding: 10px;
 		gap: 10px;
+		height: 100%;
+		min-height: 0;
+		z-index: 1;
+		backdrop-filter: blur(4px);
 	}
 
 	#map {
-		width: auto;
 		aspect-ratio: 1 / 1;
+		max-height: 100%;
 		box-sizing: border-box;
 		border-radius: 25px;
 	}
