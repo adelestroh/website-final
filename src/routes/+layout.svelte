@@ -14,10 +14,6 @@
 </svelte:head>
 
 <div class="bg-image"></div>
-<div class="bg-png"></div>
-<div class="bg-png-2"></div>
-<div class="bg-png-3"></div>
-<div class="bg-png-4"></div>
 <div class="bg-splitter-1"></div>
 <div class="bg-splitter-2"></div>
 
@@ -46,10 +42,6 @@
 	}
 
 	.bg-image,
-	.bg-png,
-	.bg-png-2,
-	.bg-png-3,
-	.bg-png-4,
 	.bg-splitter-1,
 	.bg-splitter-2 {
 		position: fixed;
@@ -64,23 +56,6 @@
 		z-index: -5;
 	}
 
-	/* floating PNG layers */
-	.bg-png {
-		background: url('$lib/assets/background/3D_Shape_1.png') center/cover;
-		z-index: -4;
-	}
-	.bg-png-2 {
-		background: url('$lib/assets/background/3D_Shape_2.png') center/150%;
-		z-index: -4;
-	}
-	.bg-png-3 {
-		background: url('$lib/assets/background/3D_Shape_3.png') center/cover;
-		z-index: -4;
-	}
-	.bg-png-4 {
-		background: url('$lib/assets/background/3D_Shape_4.png') center/cover;
-		z-index: -4;
-	}
 
 	/* splitters MUST NOT disappear */
 	.bg-splitter-1 {
