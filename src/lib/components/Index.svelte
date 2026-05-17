@@ -6,7 +6,7 @@
 </script>
 
 <button popovertarget={anchor} class="index-item" style:anchor-name={anchor}>
-	<span class="date">{time}</span>
+	<p class="date">{time}</p>
 	<div class="index-content" id={anchor} style:position-anchor={anchor} popover>
 		<div class="top-bar">
 			<p>12°C</p>
@@ -23,7 +23,6 @@
 		justify-content: space-between;
 		align-items: center;
 
-		font-size: 20px;
 		width: 100%;
 		color: white;
 		padding: 0 10px;

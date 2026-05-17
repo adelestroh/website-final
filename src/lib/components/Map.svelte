@@ -21,15 +21,25 @@
 	crossorigin=""
 />
 
-<div id="map" bind:this={mapContainer}></div>
+<div id="map-column">
+	<p>Current Location:</p>
+	<div id="map" bind:this={mapContainer}></div>
+</div>
 
 <style>
+	#map-column {
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 10px;
+		gap: 10px;
+	}
+
 	#map {
 		width: auto;
 		aspect-ratio: 1 / 1;
-		margin: 10px;
 		box-sizing: border-box;
-		align-self: flex-end;
 		border-radius: 25px;
 	}
 </style>
