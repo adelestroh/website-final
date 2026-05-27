@@ -57,7 +57,7 @@
 	<Index time="Scheduled | 12.06.26 | 0:00" temperature={-20} weatherID={0} src={Placeholder}>
 		<p>This recording is scheduled, come back later!</p>
 	</Index>
-	<Index time="Scheduled | 13.06.2026 | 0:00" temperature={-20} weatherID={0} src={Placeholder}>
+	<Index time="Scheduled | 13.06.26 | 0:00" temperature={-20} weatherID={0} src={Placeholder}>
 		<p>This recording is scheduled, come back later!</p>
 	</Index>
 </div>

@@ -35,7 +35,7 @@
 		overflow: hidden;
 		height: calc(100vh - 50px);
 		display: grid;
-		grid-template-columns: auto 300px;
+		grid-template-columns: auto 400px;
 	}
 
 	@media (max-width: 750px) {
