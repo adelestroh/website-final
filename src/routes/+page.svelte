@@ -9,6 +9,8 @@
 
 	import Image25 from '$lib/assets/content/images/25.05.png';
 	import Live25 from '$lib/assets/content/audios/Live-25.05.mp3';
+
+	import Placeholder from '$lib/assets/content/images/placeholder.png';
 </script>
 
 <div id="indexes">
@@ -51,10 +53,10 @@
 			reality of sand and its surrounding, I follow
 		</p>
 	</Index>
-	<Index time="Scheduled | 12.06.26 | 0:00" temperature={-20} weatherID={0} src={Image25}>
+	<Index time="Scheduled | 12.06.26 | 0:00" temperature={-20} weatherID={0} src={Placeholder}>
 		<p>This recording is scheduled, come back later!</p>
 	</Index>
-	<Index time="Scheduled | 13.06.2026 | 0:00" temperature={-20} weatherID={0} src={Image25}>
+	<Index time="Scheduled | 13.06.2026 | 0:00" temperature={-20} weatherID={0} src={Placeholder}>
 		<p>This recording is scheduled, come back later!</p>
 	</Index>
 </div>

@@ -49,7 +49,7 @@
 	{#if isOpen}
 		<div class="index-content" style:position-anchor={anchor}>
 			<div class="top-bar">
-				<p>{temperature}°C</p>
+				<p>{temperature > -20 ? temperature : 'xx'}°C</p>
 				<img src={icons[weatherID]} class="temp-icon" />
 			</div>
 			<div class="content"><SoundPlayer image={src} sound={audioSrc}></SoundPlayer></div>
