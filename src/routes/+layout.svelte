@@ -9,8 +9,7 @@
 </script>
 
 <div class="bg-image"></div>
-<div class="bg-splitter-1"></div>
-<div class="bg-splitter-2"></div>
+
 
 <Radio></Radio>
 
@@ -45,9 +44,8 @@
 		}
 	}
 
-	.bg-image,
-	.bg-splitter-1,
-	.bg-splitter-2 {
+	.bg-image
+	 {
 		position: fixed;
 		inset: 0;
 		pointer-events: none;
@@ -60,14 +58,5 @@
 		z-index: -5;
 	}
 
-	/* splitters MUST NOT disappear */
-	.bg-splitter-1 {
-		background: url('$lib/assets/background/splitter_1.png') center/120% no-repeat;
-		z-index: -3;
-	}
-
-	.bg-splitter-2 {
-		background: url('$lib/assets/background/splitter_2.png') center/90% no-repeat;
-		z-index: -3;
-	}
+	
 </style>
