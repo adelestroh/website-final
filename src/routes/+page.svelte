@@ -23,9 +23,8 @@
 		audioSrc={Live22}
 	>
 		<p>
-			Dragged, dredged, layered - these episodes trace the shifting material reality of the
-			shoreline at Strandeiland, an artificial island located in IJBurg. Listening to the material
-			reality of sand and its surrounding, I follow
+			Streaming live from a small strip of shoreline on Strandeiland, one of the few sections of this artificial island still temporarily accessible to the public, this episode taps into the sonic reality of a place in the midst of massive transformation. Early morning drilling, water pumps, the ground being split open for sewage infrastructure: the construction that is actively reshaping this island reaches you through four microphone channels, each offering a different opening into the landscape. 
+What arrives through your headphones is not Strandeiland itself. It is a partial reconstruction, one of many versions: filtered through microphones, signal loss, and the limitations of this streaming station. But even in its incompleteness, this stream captures something the dominant narrative of this island does not: the sound of a place being fundamentally and irreversibly remade. 
 		</p>
 	</Index>
 	<Index
