@@ -4,6 +4,8 @@
 	import Rainy from '$lib/assets/ui-elements/Icon_Rain.png';
 	import Sunny from '$lib/assets/ui-elements/Icon_sunny.png';
 
+	import SoundPlayer from './SoundPlayer.svelte';
+
 	let isOpen = $state(false);
 	let container: HTMLElement | undefined = $state();
 	let {
@@ -11,9 +13,16 @@
 		temperature,
 		weatherID,
 		src,
+		audioSrc,
 		children
-	}: { time: string; temperature: number; weatherID: number; src: string; children: any } =
-		$props();
+	}: {
+		time: string;
+		temperature: number;
+		weatherID: number;
+		src: string;
+		audioSrc?: string;
+		children: any;
+	} = $props();
 
 	const anchor = `--a-${crypto.randomUUID()}`;
 
@@ -33,7 +42,6 @@
 	style:anchor-name={anchor}
 	onclick={() => {
 		isOpen = !isOpen;
-		console.log('test');
 	}}
 	bind:this={container}
 >
@@ -44,7 +52,7 @@
 				<p>{temperature}°C</p>
 				<img src={icons[weatherID]} class="temp-icon" />
 			</div>
-			<div class="content"><img {src} alt="" /></div>
+			<div class="content"><SoundPlayer image={src} sound={audioSrc}></SoundPlayer></div>
 			<div class="content">{@render children()}</div>
 		</div>
 	{/if}
@@ -93,6 +101,7 @@
 		position-visibility: always;
 		position-try-fallbacks: --above-right;
 		z-index: 1;
+		cursor: default;
 
 		width: calc(anchor-size(width) * 0.7);
 

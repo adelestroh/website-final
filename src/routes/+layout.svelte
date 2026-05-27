@@ -1,5 +1,4 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
 	import '$lib/css/reset.css';
 	import '$lib/css/style.css';
 
@@ -8,10 +7,6 @@
 
 	let { children } = $props();
 </script>
-
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
 
 <div class="bg-image"></div>
 <div class="bg-splitter-1"></div>
