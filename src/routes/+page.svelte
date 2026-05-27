@@ -14,6 +14,7 @@
 </script>
 
 <div id="indexes">
+	<p>Location: Strandeiland, Amsterdam, NL</p>
 	<Index
 		time="52.356100, 5.014607 | 22.05.26 | 7:00 "
 		temperature={22}
@@ -71,5 +72,9 @@
 		padding: 10px 10px 60vh 10px;
 		box-sizing: border-box;
 		overflow-y: auto;
+	}
+
+	p {
+		padding-left: 10px;
 	}
 </style>
