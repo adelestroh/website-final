@@ -1,7 +1,7 @@
 <script>
 	import Index from '$lib/components/Index.svelte';
 
-	import Image22 from '$lib/assets/content/images/22.05.png';
+	import Image22 from '$lib/assets/content/images/Img_22.05..jpeg';
 	import Live22 from '$lib/assets/content/audios/Live_22.05.mp3';
 
 	import Image24 from '$lib/assets/content/images/24.05.png';
@@ -10,6 +10,8 @@
 	import Image25 from '$lib/assets/content/images/Img_05.06..jpeg';
 	import Live25 from '$lib/assets/content/audios/MP3_05.06. Live.mp3';
 
+	import Image26 from '$lib/assets/content/images/Img_07.06..jpeg';
+	import Live26 from '$lib/assets/content/audios/MP3_07.06.NEU.mp3';
 
 	import Placeholder from '$lib/assets/content/images/placeholder.png';
 </script>
@@ -63,8 +65,8 @@ As a result, the boundary between environmental and industrial sound becomes les
 		time="07.06.2026 | 11:24 (CEST)"
 		temperature={17}
 		weatherID={0}
-		src={Image25}
-		audioSrc={Live25}
+		src={Image26}
+		audioSrc={Live26}
 	>
 		<p>
 		Add text here
