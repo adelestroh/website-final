@@ -7,8 +7,9 @@
 	import Image24 from '$lib/assets/content/images/24.05.png';
 	import Live24 from '$lib/assets/content/audios/Live-24.05.mp3';
 
-	import Image25 from '$lib/assets/content/images/25.05.png';
-	import Live25 from '$lib/assets/content/audios/Live-25.05.mp3';
+	import Image25 from '$lib/assets/content/images/Img_05.06..jpeg';
+	import Live25 from '$lib/assets/content/audios/MP3_05.06. Live.mp3';
+
 
 	import Placeholder from '$lib/assets/content/images/placeholder.png';
 </script>
@@ -16,22 +17,23 @@
 <div id="indexes">
 	<p>Location: Strandeiland, Amsterdam, NL</p>
 	<Index
-		time="52.356100, 5.014607 | 22.05.26 | 7:00 "
+		time=" 22.05.2026 | 7:00 (CEST) "
 		temperature={22}
-		weatherID={2}
+		weatherID={3}
 		src={Image22}
 		audioSrc={Live22}
 	>
 		<p>
-			Streaming live from a small strip of shoreline on Strandeiland, one of the few sections of this artificial island still temporarily accessible to the public, this episode taps into the sonic reality of a place in the midst of massive transformation. Early morning drilling, water pumps, the ground being split open for sewage infrastructure: the construction that is actively reshaping this island reaches you through four microphone channels, each offering a different opening into the landscape. 
-What arrives through your headphones is not Strandeiland itself. It is a partial reconstruction, one of many versions: filtered through microphones, signal loss, and the limitations of this streaming station.  
+		Streaming live from a small strip of shoreline on Strandeiland, one of the few sections of this artificial island still temporarily accessible to the public, this episode taps into the sonic reality of a place in the midst of massive transformation. Early morning drilling, water pumps, the ground being split open for sewage infrastructure: the construction that is actively reshaping this island reaches you through four microphone channels, each offering a different opening into the landscape. 
+Eventough the water surface looks calm and the water is perfectly clear, the hydrophone captures pulses underwater, potentially travelling and being transmitted from the drilling site nearby making perceptible how far the effects of the construction site reaches and makes clear that not only has an impact on the island itself, but also the surrounding water and eco systems.
+While the water's surface appears calm and remarkably clear, the hydrophone captures rhythmic pulses beneath it, likely transmitted from the nearby drilling operations. These underwater vibrations make perceptible the far-reaching effects of construction activity, extending well beyond the visible worksite.
 		</p>
 		<p> #zoommic #hydrophone #contactmic #binauralelectretmic
 
 		</p>
 	</Index>
 	<Index
-		time="52.356100, 5.014607 | 24.05.26 | 8:55"
+		time="24.05.2026 | 8:55 (CEST)"
 		temperature={17}
 		weatherID={3}
 		src={Image24}
@@ -44,17 +46,47 @@ What arrives through your headphones is not Strandeiland itself. It is a partial
 
 	</Index>
 	<Index
-		time="52.358302, 5.024382 | 25.04.26 | 10:40"
-		temperature={27}
-		weatherID={3}
+		time="05.06.2026 | 11:24 (CEST)"
+		temperature={17}
+		weatherID={1}
 		src={Image25}
 		audioSrc={Live25}
 	>
 		<p>
-			By sneaking into a hole in the fence of the construction site, you are able to listen to exclusive content streamed from Het Oog, an artifical body of water sitting on top of a primeval water channel. The entire landscape here is an assembly of displaced materials, a place constructed out of other places. Listening to it means listening to multiple elsewheres at once — and to the ghost of a river that once shaped this ground before it was built on top over.
+			Although the construction site is active today, the rough weather conditions make it difficult to distinguish which sounds and signals are being transmitted through the water from the nearby drilling operations. Strong winds agitate the surface, generating fast-moving waves and a dense accumulation of white foam along the shoreline. The weather is especially present in the soundscape, dominating all four microphone channels with the force of the wind and the constant motion of the water.
+As a result, the boundary between environmental and industrial sound becomes less clear. It is difficult to determine where the effects of the weather end and those of the construction activity begin. Yet the acoustic character of the site differs noticeably from previous livestreams made under calmer conditions, when construction sounds were more clearly perceptible. Today's transmission reveals how weather can shape, mask, and transform the audibility of human activity, producing a markedly different listening experience of the same location.
 		</p>
 		<p>#zoommic #hydrophone #contactmic #binauralelectretmic</p>
 	</Index>
+
+<Index
+		time="07.06.2026 | 11:24 (CEST)"
+		temperature={17}
+		weatherID={0}
+		src={Image25}
+		audioSrc={Live25}
+	>
+		<p>
+		Add text here
+		</p>
+		<p>#zoommic #hydrophone #contactmic #binauralelectretmic</p>
+	</Index>
+
+	<Index
+		time="09.06.2026 | 10:00 (CEST)"
+		temperature={17}
+		weatherID={1}
+		src={Image25}
+		audioSrc={Live25}
+	>
+		<p>
+		Add text here
+		</p>
+		<p>#zoommic #hydrophone #contactmic #binauralelectretmic</p>
+	</Index>
+	
+
+	
 	<Index time="Scheduled | 12.06.26 | 0:00" temperature={-20} weatherID={0} src={Placeholder}>
 		<p>This recording is scheduled, come back later!</p>
 	</Index>
