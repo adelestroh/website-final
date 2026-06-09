@@ -6,20 +6,26 @@
 
 	onMount(async () => {
 		L = await import('leaflet');
-		const lat = 52.356100
-		const lng = 5.014607  
+
+		const lat = 52.356100;
+		const lng = 5.014607;
+
+		// Create map
 		const map = L.map(mapContainer).setView([lat, lng], 15);
 
+		// Add tiles
 		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			attribution: '&copy; OpenStreetMap'
 		}).addTo(map);
 
-		L.Icon.Default.mergeOptions({
-			iconUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-icon.png',
-			iconRetinaUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-icon-2x.png',
-			shadowUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-shadow.png'
-		});
+		const marker = L.marker([lat, lng]).addTo(map)
 
+		// FIX 1: force Leaflet to recalc size (VERY important in Svelte/layouts)
+		setTimeout(() => {
+			map.invalidateSize();
+		}, 0);
+
+		// FIX 2: ensure marker icons always load correctly in Vite/Svelte
 		const icon = L.icon({
 			iconUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-icon.png',
 			shadowUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-shadow.png',
@@ -29,14 +35,20 @@
 			shadowSize: [41, 41]
 		});
 
-	L.marker([lat, lng], { icon })
-			.addTo(map)
-			.bindPopup('location here?')
-			.openPopup();
-	});
+		map.setView([lat, lng],15);
 
+		// Add marker
+		L.marker([lat, lng], { icon })
+			.addTo(map)
+			.bindPopup('transmission station')
+			.openPopup();
+
+		// Debug (optional but useful)
+		console.log('Center:', map.getCenter());
+	});
 </script>
 
+<!-- Leaflet CSS -->
 <link
 	rel="stylesheet"
 	href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -63,9 +75,11 @@
 	}
 
 	#map {
+		width: 100%;        
 		aspect-ratio: 1 / 1;
 		max-height: 100%;
 		box-sizing: border-box;
 		border-radius: 25px;
+		overflow: hidden;   
 	}
 </style>
