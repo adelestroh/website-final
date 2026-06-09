@@ -17,7 +17,7 @@
 </script>
 
 <div id="indexes">
-	<p>Location: 52.356100, 5.014607 Strandeiland, Amsterdam, NL 
+	<p>Location: Strandeiland, Amsterdam, NL 
 	</p>
 	
 	<Index
@@ -86,7 +86,7 @@ Since its a Sunday, you are able to hear a clear sonic distinction between previ
 		
 	>
 		<p>
-		will be uploaded Wednesday 10th June
+		blubblub
 		</p>
 		<p>#zoommic #hydrophone #contactmic #binauralelectretmic</p>
 	</Index>
