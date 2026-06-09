@@ -8,27 +8,24 @@
 		L = await import('leaflet');
 		const lat = 52.356100
 		const lng = 5.014607  
-		let map = L.map(mapContainer).setView([lat, lng], 15);
+		const map = L.map(mapContainer).setView([lat, lng], 15);
 
 		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			attribution: '&copy; OpenStreetMap'
 		}).addTo(map);
 
-		const icon = L.icon({
+		L.Icon.Default.mergeOptions({
 			iconUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-icon.png',
-			shadowUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-shadow.png',
-			iconSize: [25, 41],
-			iconAnchor: [12, 41],
-			popupAnchor: [1, -34],
-			shadowSize: [41, 41]
-	});
+			iconRetinaUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-icon-2x.png',
+			shadowUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-shadow.png'
+		});
 
 	L.marker([lat, lng], { icon })
 			.addTo(map)
-			.bindPopup('Your location here')
+			.bindPopup('location here?')
 			.openPopup();
 	});
-	
+
 </script>
 
 <link
