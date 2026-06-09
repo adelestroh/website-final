@@ -126,9 +126,9 @@
 		{#if isError}
 			<p class="offline">OFFLINE (Error)</p>
 		{:else if isPlaying}
-			<p class="live">LIVE</p>
+			<p class="live">LIVE FROM 52.356100, 5.014607 STRANDEILAND AMSTERDAM </p>
 		{:else}
-			<p class="idle">READY</p>
+			<p class="idle">OFFLINE - CHECK SCHEDULE FOR NEXT LIVESTREAM</p>
 		{/if}
 	</div>
 </div>
