@@ -75,14 +75,14 @@ As a result, the boundary between environmental and industrial sound becomes les
 	</Index>
 
 	<Index
-		time="09.06.2026 | 10:00 (CEST)"
-		temperature={17}
+		time="10.06.2026 | 10:00 (CEST)"
+		temperature={16}
 		weatherID={1}
-		src={Image25}
-		audioSrc={Live25}
+		
+		
 	>
 		<p>
-		Add text here
+		will be uploaded Wednesday 10th June
 		</p>
 		<p>#zoommic #hydrophone #contactmic #binauralelectretmic</p>
 	</Index>
@@ -90,10 +90,10 @@ As a result, the boundary between environmental and industrial sound becomes les
 
 	
 	<Index time="Scheduled | 12.06.26 | 0:00" temperature={-20} weatherID={0} src={Placeholder}>
-		<p>This recording is scheduled, come back later!</p>
+		<p>This Livestream is scheduled, come back later!</p>
 	</Index>
 	<Index time="Scheduled | 13.06.26 | 0:00" temperature={-20} weatherID={0} src={Placeholder}>
-		<p>This recording is scheduled, come back later!</p>
+		<p>This Livestream is scheduled, come back later!</p>
 	</Index>
 </div>
 
