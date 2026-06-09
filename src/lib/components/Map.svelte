@@ -20,6 +20,15 @@
 			shadowUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-shadow.png'
 		});
 
+		const icon = L.icon({
+			iconUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-icon.png',
+			shadowUrl: 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-shadow.png',
+			iconSize: [25, 41],
+			iconAnchor: [12, 41],
+			popupAnchor: [1, -34],
+			shadowSize: [41, 41]
+		});
+
 	L.marker([lat, lng], { icon })
 			.addTo(map)
 			.bindPopup('location here?')
