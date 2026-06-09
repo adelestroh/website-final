@@ -26,9 +26,9 @@
 		audioSrc={Live22}
 	>
 		<p>
-		Streaming live from a small strip of shoreline on Strandeiland, one of the few sections of this artificial island still temporarily accessible to the public, this episode taps into the sonic reality of a place in the midst of massive transformation. Early morning drilling, water pumps, the ground being split open for sewage infrastructure: the construction that is actively reshaping this island reaches you through four microphone channels, each offering a different opening into the landscape. 
-Eventough the water surface looks calm and the water is perfectly clear, the hydrophone captures pulses underwater, potentially travelling and being transmitted from the drilling site nearby making perceptible how far the effects of the construction site reaches and makes clear that not only has an impact on the island itself, but also the surrounding water and eco systems.
-While the water's surface appears calm and remarkably clear, the hydrophone captures rhythmic pulses beneath it, likely transmitted from the nearby drilling operations. These underwater vibrations make perceptible the far-reaching effects of construction activity, extending well beyond the visible worksite.
+		Streaming live from a small strip of shoreline on Strandeiland, one of the few sections of this artificial island that remains temporarily accessible to the public, this episode taps into the sonic reality of a place undergoing massive transformation. Early-morning drilling, water pumps, and the ground being split open for sewage infrastructure all form part of the construction activity actively reshaping the island. These sounds reach you through four microphone channels, each offering a different perspective on the landscape.
+
+Even though the water surface appears calm and perfectly clear, the hydrophone captures pulses travelling underwater, likely transmitted from the nearby drilling site. This makes perceptible how far the effects of the construction extend, revealing that the impact is not limited to the island itself but also affects the surrounding waters and ecosystems.
 		</p>
 		<p> #zoommic #hydrophone #contactmic #binauralelectretmic
 
