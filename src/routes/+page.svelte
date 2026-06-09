@@ -86,7 +86,7 @@ Since its a Sunday, you are able to hear a clear sonic distinction between previ
 		
 	>
 		<p>
-		blubblub
+		will be uploaded soon
 		</p>
 		<p>#zoommic #hydrophone #contactmic #binauralelectretmic</p>
 	</Index>
