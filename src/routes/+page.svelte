@@ -62,14 +62,16 @@ As a result, the boundary between environmental and industrial sound becomes les
 	</Index>
 
 <Index
-		time="07.06.2026 | 11:24 (CEST)"
+		time="07.06.2026 | 19:07 (CEST)"
 		temperature={17}
 		weatherID={0}
 		src={Image26}
 		audioSrc={Live26}
 	>
 		<p>
-		Add text here
+		A windy Sunday afternoon livestream reveals only subtle underwater activity. Through the hydrophone, small recurring pulses can be heard. These sounds may be produced by loose objects resting on the lakebed: debris, shell fragments, or other materials that have been washed ashore and redistributed underwater during the rough weather of the previous days. Moved by currents and wave action, they occasionally make contact with the microphone, creating rhythmic impulses.
+Another possibility would be aquatic wildlife. The IJmeer surrounding Strandeiland is home to fish species such as zander, carp, catfish, and bream. Yet the lack of visible submerged vegetation along this section of shoreline makes this explanation less likely.
+Since its a Sunday, you are able to hear a clear sonic distinction between previous livestreams conducted during a weekday. The nearby construction sites are inactive today, strengthening the assumption that the underwater vibrations heard during the week originate not from the lake itself, but from construction activity travelling through the ground and water.
 		</p>
 		<p>#zoommic #hydrophone #contactmic #binauralelectretmic</p>
 	</Index>
