@@ -17,10 +17,7 @@
 </script>
 
 <div id="indexes">
-	<p>Location: Strandeiland, Amsterdam, NL 
-	Tune in to the transmission station's first site of inquiry: Strandeiland, an artificial island east of Amsterdam.
-Listen across shifting scales: from the shoreline and submerged environments to distant construction activity and changing wind patterns. Follow sounds as they drift through the landscape, disappear, return, or reveal connections that might otherwise go unnoticed.
-Located at 52.356100, 5.014607, these livestreams, conducted at different times and under varying weather conditions, reveal spatial and temporal changes that are otherwise imperceptible. Together, they make audible the interconnected processes of water, wind, sediment, infrastructure, and construction.
+	<p>Location: 52.356100, 5.014607 Strandeiland, Amsterdam, NL 
 	</p>
 	
 	<Index
