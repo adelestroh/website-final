@@ -97,7 +97,7 @@ Since its a Sunday, you are able to hear a clear sonic distinction between previ
 		<p>
 		As previous livestreams revealed, sounds and signals travel through this body of water when the construction site is active. In this livestream, a geophone uncovers that these vibrations are not only waterborne but also travel through the ground itself. Listen closely and you may hear subtle pulses emerging from the sediment at the bottom of the IJmeer bay. 
 A small storm passed through the area right before the transmission station went live, and its traces remain present throughout the soundscape of the site. 
-Strong winds agitate the water surface, waves rework the shoreline, and currents continue to redistribute sediment along the beach and lakebed. Weather, construction, and extraction overlap here, making it difficult to distinguish one force from another. Both are forces producing this landscape.
+Strong winds agitate the water surface, waves rework the shoreline, and currents continue to redistribute sediment along the beach and lakebed. Weather, construction, and extraction overlap here, making it difficult to distinguish one force from another. 
 		</p>
 		<p>#zoommic #geophone #contactmic #binauralelectretmic</p>
 	</Index>
