@@ -13,8 +13,8 @@
 	import Image26 from '$lib/assets/content/images/Img_07.06..jpeg';
 	import Live26 from '$lib/assets/content/audios/MP3_07.06.NEU.mp3';
 
-	import Image27 from '$lib/assets/content/images/Img_10.06..jpeg';
-	import Live27 from '$lib/assets/content/audios/MP3_10.06..mp3';
+	//import Image27 from '$lib/assets/content/images/Img_10.06..jpeg';
+	//import Live27 from '$lib/assets/content/audios/MP3_10.06..mp3';
 
 	import Placeholder from '$lib/assets/content/images/placeholder.png';
 </script>
@@ -86,21 +86,8 @@ Since its a Sunday, you are able to hear a clear sonic distinction between previ
 		<p>#zoommic #hydrophone #contactmic #binauralelectretmic</p>
 	</Index>
 
-	<Index
-		time="10.06.2026 | 10:00 (CEST)"
-		temperature={16}
-		weatherID={1}
-		src={Image27}
-		audioSrc={Live27}
-		
-		
-		<p>
-		As previous livestreams revealed, sounds and signals travel through this body of water when the construction site is active. In this livestream, a geophone uncovers that these vibrations are not only waterborne but also travel through the ground itself. Listen closely and you may hear subtle pulses emerging from the sediment at the bottom of the IJmeer bay. 
-A small storm passed through the area right before the transmission station went live, and its traces remain present throughout the soundscape of the site. 
-Strong winds agitate the water surface, waves rework the shoreline, and currents continue to redistribute sediment along the beach and lakebed. Weather, construction, and extraction overlap here, making it difficult to distinguish one force from another. 
-		</p>
-		<p>#zoommic #geophone #contactmic #binauralelectretmic</p>
-	</Index>
+	
+
 	
 
 	
