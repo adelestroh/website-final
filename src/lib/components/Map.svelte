@@ -6,7 +6,7 @@
 
 	onMount(async () => {
 		L = await import('leaflet');
-
+			
 		const lat = 52.356100;
 		const lng = 5.014607;
 
