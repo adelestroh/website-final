@@ -7,8 +7,8 @@
 	onMount(async () => {
 		L = await import('leaflet');
 			
-		const lat = 52.3685018;
-		const lng = 4.8808644;
+		const lat = 52.356100;
+		const lng = 5.014607;
 
 		// Create map
 		const map = L.map(mapContainer).setView([lat, lng], 15);
