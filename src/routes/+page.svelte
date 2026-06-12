@@ -106,11 +106,11 @@ Strong winds agitate the water surface, waves rework the shoreline, and currents
 	
 
 	
-	<Index time="Scheduled | 12.06.26 | 0:00" temperature={-20} weatherID={0} src={Placeholder}>
-		<p>This Livestream is scheduled, come back later!</p>
+	<Index time="Scheduled | 12.06.26 | 12:00 (CEST)" temperature={18} weatherID={0} src={Placeholder}>
+		<p>will be uploaded soon!</p>
 	</Index>
-	<Index time="Scheduled | 13.06.26 | 0:00" temperature={-20} weatherID={0} src={Placeholder}>
-		<p>This Livestream is scheduled, come back later!</p>
+	<Index time="Scheduled | 13.06.26 | 14:00 (CEST)" temperature={-20} weatherID={0} src={Placeholder}>
+		<p>This Livestream is scheduled, come back tomorrow at 14:00!</p>
 	</Index>
 </div>
 
