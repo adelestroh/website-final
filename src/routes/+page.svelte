@@ -89,7 +89,7 @@ Since its a Sunday, you are able to hear a clear sonic distinction between previ
 	<Index
 		time="10.06.2026 | 10:36 (CEST)"
 		temperature={16}
-		weatherID={0}
+		weatherID={1}
 		src={Image27}
 		audioSrc={Live27}
 	>
@@ -109,8 +109,8 @@ Strong winds agitate the water surface, waves rework the shoreline, and currents
 	<Index time="Scheduled | 12.06.26 | 12:00 (CEST)" temperature={18} weatherID={0} src={Placeholder}>
 		<p>will be uploaded soon!</p>
 	</Index>
-	<Index time="Scheduled | 13.06.26 | 14:00 (CEST)" temperature={-20} weatherID={0} src={Placeholder}>
-		<p>This Livestream is scheduled, come back tomorrow at 14:00!</p>
+	<Index time="Scheduled | 13.06.26 | 14:00 (CEST)" temperature={17} weatherID={1} src={Placeholder}>
+		<p>This Livestream is scheduled, come back at 14:00!</p>
 	</Index>
 </div>
 
